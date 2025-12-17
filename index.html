@@ -1,50 +1,72 @@
-<!DOCTYPE html> 
-<html lang="nl">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Timo's Fotografie</title>
-        <link rel="stylesheet" href="style.css">
-</head>
-    <body> 
-        <h1 style="font-size: 50px;">
-            Timo's Fotografie
-        </h1>
-        <h1>
-            Portfolio binnenkort online!
-        </h1>
-        <h2>Zelfde heading maar dan kleiner</h2>
-        <p>
-            Onvergetelijke momenten, vastgelegd als blijvende herinneringen.”
-        </p>
 
-        <img src="Images/Profielfoto.png" alt="Profielfoto Timo">
-      <div>
-        <button> <a href="./Pages/About me.html">Over mij</a> </button>
-     </div>
-     <div></div>
-     ️ Contactformulier:
-     <form>
-        <label for="Search">Email</label>
-        <input type="text">
-        <div></div>
-        <label for="Search">Name</label>
-        <input type="text">
-        <div></div>
-        <button type="submit">Send</button>
-     </form>
+<!doctype html>
+<!--
+	index.html - Home page for freelance portfolio
+	Uses semantic HTML and shared CSS (style.css)
+	No JavaScript used.
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Freelance Portfolio — Home</title>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="site-container header-inner">
+				<a class="logo" href="index.html">My Portfolio</a>
+				<nav class="site-nav">
+					<a href="photography.html">Photography</a>
+					<a href="webdesign.html">Web Design</a>
+				</nav>
+			</div>
+		</header>
 
-     <div></div>
-     google site:
-     <div>
-        <a href="https://mail.google.com/mail/?tab=rm&ogbl">Gmail</a>
-        <a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a>
-        <img src="Images/the-ultimate-hamburger.webp" alt="Hamburger" width="50" height="50">
-        <img src="Images/Profielfoto.png" alt="Profielfoto" width="50" height="50">
-     </div>
-     <div></div>
-     <div></div>
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="site-container hero-inner">
+					<h1 class="hero-title">Hi, I create beautiful photos and websites<br>that help local businesses stand out.</h1>
+					<p class="hero-sub">Freelance photographer & web developer. I help small businesses tell their story online and through memorable imagery.</p>
+					<div class="hero-cta">
+						<a class="btn btn-primary" href="photography.html">Photography Portfolio</a>
+						<a class="btn btn-outline" href="webdesign.html">Web Design Portfolio</a>
+					</div>
+				</div>
+			</section>
 
-    </body>
+			<!-- What I do -->
+			<section class="what-i-do">
+				<div class="site-container">
+					<h2>Services</h2>
+					<div class="services">
+						<article class="service-card">
+							<h3>Photography</h3>
+							<p>Product, event and local business photography that helps you sell more and look professional across marketing channels.</p>
+						</article>
+						<article class="service-card">
+							<h3>Website Building</h3>
+							<p>Fast, modern websites for local businesses — easy to manage, mobile-friendly, and focused on conversions.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="site-footer">
+			<div class="site-container footer-inner">
+				<p>© <span id="year">2025</span> My Name — Freelance Photographer & Web Developer</p>
+			</div>
+		</footer>
+
+		<!-- WhatsApp floating button (visible on all pages) -->
+		<a class="whatsapp-fab" href="https://wa.me/31600000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+			<span aria-hidden="true">💬</span>
+		</a>
+
+	</body>
 </html>
-
